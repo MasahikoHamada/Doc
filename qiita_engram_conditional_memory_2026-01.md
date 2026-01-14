@@ -122,6 +122,19 @@ Engramの技術要素は「突然現れた魔法」ではなく、N-gram/サブ�
 
 Engramはこれらを「LLMの中で、スケールする“条件付きメモリ”として再構成した」位置づけだと読むのが分かりやすいです（`https://arxiv.org/abs/2601.07372`）。
 
+## 参考：各社はどの手法でLLMを改良している？（公開情報ベース）
+
+本稿はEngram中心ですが、比較のために「大手が“公開情報として”語っている改良の型」も軽く触れておきます。  
+（※企業の内部実装の詳細は非公開が多いので、**一次情報で確認できる範囲** に限定します。）
+
+- **OpenAI**：人間フィードバックでの整列（例：InstructGPT のRLHF枠組み：`https://arxiv.org/abs/2203.02155`）と、ツール利用（function calling：`https://platform.openai.com/docs/guides/function-calling`、retrieval：`https://platform.openai.com/docs/guides/retrieval`）
+- **Google（Gemini）**：スケール＋システム最適化（Gemini Technical Report：`https://arxiv.org/abs/2312.11805`）と、ツール利用（function calling：`https://ai.google.dev/gemini-api/docs/function-calling`）
+- **Anthropic（Claude）**：Constitutional AI による整列（`https://arxiv.org/abs/2212.08073`）と、ツール利用（tool use：`https://docs.anthropic.com/en/docs/tool-use/overview`）
+- **Meta（Llama）**：オープンな学習/整列の枠組み（Llama 2 論文：`https://arxiv.org/abs/2307.09288`）。検索/メモリを外付けして補う研究系譜（例：kNN-LM：`https://arxiv.org/abs/1911.00172`）も強い
+- **DeepSeek（Engram文脈）**：条件付きメモリ（lookup）で“計算以外の軸”を足す（Engram：`https://arxiv.org/abs/2601.07372`、実装：`https://github.com/deepseek-ai/Engram`）
+
+ざっくり言うと、業界全体は **(1) 整列（RLHF等）(2) ツール/検索の統合（RAG等）(3) 計算・メモリ・システムの効率化（MoE/lookup等）** の組み合わせで改良している、という見立てになります。
+
 ## 今後の予測（不確実性つき）
 
 ここからは一次情報ではなく、上の潮流を踏まえた**予測です**（外れる可能性があります）。
