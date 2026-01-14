@@ -83,9 +83,9 @@ arXiv HTML版の **System Efficiency** の節では、Engramの参照が**静的
 
 ### A) いちばん普及している路線：外部検索＋生成（RAG）
 
-**RAG（Retrieval-Augmented Generation）は「外部の知識ベースから検索して、その結果をもとに生成する」路線です**（論文：`https://arxiv.org/abs/2005.11401`）。知識更新がしやすく、運用で採用されやすいのが強みです。
+**RAG（Retrieval-Augmented Generation）** は「外部の知識ベースから検索して、その結果をもとに生成する」路線です（論文：`https://arxiv.org/abs/2005.11401`）。知識更新がしやすく、運用で採用されやすいのが強みです。
 
-Engramとの違いは、RAGが**外部コーパス（文書）** を引くのに対して、Engramは**モデル内部の“静的パターン表（embedding table）”** を引く点です（`https://arxiv.org/abs/2601.07372`）。
+Engramとの違いは、RAGが **外部コーパス（文書）** を引くのに対して、Engramは **モデル内部の“静的パターン表（embedding table）”** を引く点です（`https://arxiv.org/abs/2601.07372`）。
 
 ### B) “学習時から検索込み”の大型路線：RETRO（Retrieval-Enhanced Transformer）
 
