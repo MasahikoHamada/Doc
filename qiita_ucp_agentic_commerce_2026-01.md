@@ -25,7 +25,7 @@ updated_at: "2026-01-14"
 
 ## 3分でわかる結論（読み物版）
 
-- **UCPは「AIが買い物を代行する」ための“共通のやり取りの型”**を作ろう、というGoogleの提案です（`https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/`、`https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/`）。
+- **UCPは「AIが買い物を代行する」ための“共通のやり取りの型”** を作ろう、というGoogleの提案です（`https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/`、`https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/`）。
 - ただし、いきなり世界中が同日に切り替わる話ではなく、Google自身も「**eligible**」「**soon**」のように条件付きで書いています。つまり **“標準化の方向性”＋“段階的な実装”** です（`https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/`、Google実装ガイド：`https://developers.google.com/merchant/ucp/guides`）。
 - 併せてGoogleは、検索でブランドと会話できる **Business Agent**（`https://support.google.com/brandprofile/answer/16410382`）や、AI Mode内で割引を出せる **Direct Offers（Google Adsのpilot）** も説明しています（`https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/`）。
 
@@ -34,7 +34,7 @@ updated_at: "2026-01-14"
 素人向けに一言でいうと、UCPはこういう発想です。
 
 - いままで：AI（検索やチャット）が商品ページを見つけても、店ごとに購入手順が違いすぎて、**“最後のレジ”が統一できない**
-- UCP：店とAIがやり取りするときの「注文票（何を買う／配送先／返品／購入後サポート等）」を**共通化**して、AIが迷わず進めるようにする
+- UCP：店とAIがやり取りするときの「注文票（何を買う／配送先／返品／購入後サポート等）」を**共通化** して、AIが迷わず進めるようにする
 
 ここに「支払いの同意・証跡（あとで揉めない）」が乗ると、ようやく“代行購入”が現実味を帯びます。この“同意・証跡”の方向性はAP2の説明が分かりやすいです（`https://ap2-protocol.org/`）。
 
@@ -58,11 +58,11 @@ Google公式ブログは、UCPが既存プロトコル（Agent2Agent / Agent Pay
 
 開発者向け記事でも、AP2（`https://ap2-protocol.org/`）との互換、A2A（`https://a2a-protocol.org/latest/`）、MCP（`https://modelcontextprotocol.io`）やAPIでの統合方法に触れています（`https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/`）。
 
-補足として、A2A公式ドキュメントはA2Aを「open standard」としつつ、**Googleが開発してLinux Foundationに寄贈**した旨まで書いています（`https://a2a-protocol.org/latest/`）。
+補足として、A2A公式ドキュメントはA2Aを「open standard」としつつ、**Googleが開発してLinux Foundationに寄贈** した旨まで書いています（`https://a2a-protocol.org/latest/`）。
 
 ### 4) “共同開発”や“endorsed（支持）”の社名は一次情報にあるか？
 
-Google公式ブログは、UCPが **Shopify, Etsy, Wayfair, Target, Walmart** と共同開発（co-developed）され、**American Express, Mastercard, Stripe, Visa**等を含む「more than 20」社にendorsedされたと述べています（`https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/`）。
+Google公式ブログは、UCPが **Shopify, Etsy, Wayfair, Target, Walmart** と共同開発（co-developed）され、**American Express, Mastercard, Stripe, Visa** 等を含む「more than 20」社にendorsedされたと述べています（`https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/`）。
 
 同様の記述は開発者向け記事にもあります（`https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/`）。
 
@@ -70,13 +70,13 @@ Google公式ブログは、UCPが **Shopify, Etsy, Wayfair, Target, Walmart** �
 
 ### 5) 「検索やGeminiの中で決済できる」は本当か？（ここが一番誤解が出やすい）
 
-Google公式ブログは、UCPが「AI Mode in Search と Gemini app」上のチェックアウト機能を**“soon power”**し、対象が **eligible U.S. retailers** であること、支払いが **Google Pay**、さらに **PayPalもsoon** と述べています（`https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/`）。
+Google公式ブログは、UCPが「AI Mode in Search と Gemini app」上のチェックアウト機能を**“soon power”** し、対象が **eligible U.S. retailers** であること、支払いが **Google Pay**、さらに **PayPalもsoon** と述べています（`https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/`）。
 
 一方で、開発者向け記事では「Google has built the first reference implementation of UCP, to power a new buying experience...」と書かれており、現時点の“まずはGoogle実装”である点も重要です（`https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/`）。
 
 また、Google for Developersのガイドは「GoogleのAI surfaces（Search, Gemini）上でtransactionを可能にする」こと、導入にはMerchant Centerや承認（waitlist/approval）が絡むことを示しています（`https://developers.google.com/merchant/ucp/guides`）。
 
-> ここは読み手の注意点：**「できるようになる」話と「誰でもすぐ使える」話は別**です。公式のキーワードは「eligible」「soon」「承認（waitlist/approval）」です（`https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/`、`https://developers.google.com/merchant/ucp/guides`）。
+> ここは読み手の注意点：**「できるようになる」話と「誰でもすぐ使える」話は別** です。公式のキーワードは「eligible」「soon」「承認（waitlist/approval）」です（`https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/`、`https://developers.google.com/merchant/ucp/guides`）。
 
 ### 6) Business Agent / Direct Offers は何で、誰に関係ある？
 
@@ -85,7 +85,7 @@ Google公式ブログは、UCPが「AI Mode in Search と Gemini app」上のチ
 
 ## 背景：なぜ「AIが買ってくれる」は、思ったより難しいのか
 
-“AIが商品を探してくれる”だけなら既に多くの体験があります。問題は**「買う」**の部分です。
+“AIが商品を探してくれる”だけなら既に多くの体験があります。問題は**「買う」** の部分です。
 
 Visaの解説記事は、検索・比較はできても「実決済に必要な資格情報、認証・認可、信頼の枠組み」が欠けている、と整理しています（`https://www.visa.com.sg/about-visa/stories/2025/visa-intelligent-commerce-ai-agents-are-already-shopping-are-you-ready.html`）。
 
@@ -116,7 +116,7 @@ Visaは「AI agents to buy securely and seamlessly」という文脈で「Visa I
 
 より具体的な説明として、Visaのストーリー記事は「AI-ready credentials（トークン化等）」「passkey/指示・シグナル/不正検知」などを含む“信頼”の枠組みとして説明しています（`https://www.visa.com.sg/about-visa/stories/2025/visa-intelligent-commerce-ai-agents-are-already-shopping-are-you-ready.html`）。
 
-> 直感的に言うと、Visa側は「AIに財布を持たせるなら、**財布の作法（本人確認/同意/不正対策）**が必要だよね」という話をしています。
+> 直感的に言うと、Visa側は「AIに財布を持たせるなら、**財布の作法（本人確認/同意/不正対策）** が必要だよね」という話をしています。
 
 ### 2) ウォレット/決済事業者：PayPalは“agentic commerce”を前面に出し、Mastercardと提携も
 
@@ -132,7 +132,7 @@ Stripeは「Add Stripe to your agentic workflows」として、エージェン�
 
 Microsoft Learnのドキュメントは、Copilot StudioでMCPサーバーのツール/リソースに接続してエージェントを拡張できる、と説明しています（`https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp`）。
 
-これは、UCPのような“商取引の標準”とは別軸で、**エージェントが外部能力を安全に呼び出す標準が業界に広がっている**ことを示す材料になります。
+これは、UCPのような“商取引の標準”とは別軸で、**エージェントが外部能力を安全に呼び出す標準が業界に広がっている** ことを示す材料になります。
 
 ## 報道でも同趣旨が確認できる（ただし一次情報優先）
 
@@ -142,7 +142,7 @@ Google公式だけでなく、以下の第三者メディアでもUCP/AI Mode/�
 - Search Engine Land: `https://searchengineland.com/google-universal-commerce-protocol-467290`
 - CNBC: `https://www.cnbc.com/2026/01/11/google-launches-universal-commerce-protocol-bets-on-ai-powered-retail.html`
 
-（※報道は読める範囲が媒体の仕様に依存するため、**本稿の結論は一次情報を優先**しています。）
+（※報道は読める範囲が媒体の仕様に依存するため、**本稿の結論は一次情報を優先** しています。）
 
 ## まとめ：素人が押さえるべき“3つの注意点”
 
