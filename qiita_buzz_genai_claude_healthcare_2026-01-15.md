@@ -40,6 +40,8 @@ updated_at: "2026-01-15"
 
 Claudeの医療向けページは、説明文の中で **「Trusted, HIPAA-ready AI for healthcare」** と明記しています（[Claude公式のHealthcareページ](https://claude.com/solutions/healthcare)）。
 
+※「HIPAA-ready」は公式の表現であり、適用範囲や最終的な準拠判断は各組織の契約・運用・監査に依存します（本稿では「準拠を保証する」とは断定しません）。
+
 「医療＝精度」だけでなく「医療＝規制・監査・説明責任」がセットだ、という前提を最初から認めているのがポイントです。
 
 ### 2) 「コネクタ」でデータに近づく（= モデル単体勝負をやめる）
