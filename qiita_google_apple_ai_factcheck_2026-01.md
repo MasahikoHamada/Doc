@@ -42,9 +42,9 @@ updated_at: "2026-01-13"
 AppleはApple Intelligenceを発表し、処理の基本設計として「オンデバイス」と「Private Cloud Compute（PCC）」を説明しています。  
 また、必要に応じて外部モデルとしてChatGPTを利用できる（ユーザーの同意や情報提示を伴う）旨も公式に説明されています。
 
-- **一次情報（確認できるURL）**
-  - Apple Newsroom（Apple Intelligence 発表）: `https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/`
-  - Apple公式サイト（Apple Intelligence 概要）: `https://www.apple.com/apple-intelligence/`
+- **一次情報（公式ページ）**
+  - [Apple Newsroom: Introducing Apple Intelligence for iPhone, iPad, and Mac](https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/)
+  - [Apple: Apple Intelligence（概要）](https://www.apple.com/apple-intelligence/)
 
 Apple公式サイトの説明では、たとえば次のように「オンデバイス処理」「Private Cloud Compute」が明記されています（本文中の記述）。
 
@@ -93,12 +93,9 @@ Apple公式サイトの説明では、たとえば次のように「オンデバ
 
 ## 参考文献（一次情報中心）
 
-- Apple Newsroom: Introducing Apple Intelligence for iPhone, iPad, and Mac  
-  `https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/`
-- Apple（公式）: Apple Intelligence（概要ページ。PCCやChatGPT連携の記述あり）  
-  `https://www.apple.com/apple-intelligence/`
-- 米司法省（DOJ）プレスリリース（反トラスト訴訟の一次情報の起点として）  
-  `https://www.justice.gov/archives/opa/pr/justice-department-sues-monopolist-google-violating-antitrust-laws`
+- [Apple Newsroom: Introducing Apple Intelligence for iPhone, iPad, and Mac](https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/)
+- [Apple: Apple Intelligence（概要ページ。PCCやChatGPT連携の記述あり）](https://www.apple.com/apple-intelligence/)
+- [米司法省（DOJ）: Justice Department Sues Monopolist Google for Violating Antitrust Laws（反トラスト訴訟の一次情報の起点として）](https://www.justice.gov/archives/opa/pr/justice-department-sues-monopolist-google-violating-antitrust-laws)
 
 ---
 
@@ -109,4 +106,8 @@ Apple公式サイトの説明では、たとえば次のように「オンデバ
 - iOSの対応バージョン/時期が**公式に**明言されたか
 - 契約金額が、信頼できる大手報道で**複数一致**しているか
 - 反トラストの救済命令について、**裁判所命令文**を確認できたか
+
+---
+
+作成日: 2026/01/21
 
